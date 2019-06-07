@@ -5,6 +5,8 @@ date: "05-06-2019"
 
 Trying out gatsby
 
+![Pic](./pic.png)
+
 ## Topics Covered
 
 1. Gatsby
