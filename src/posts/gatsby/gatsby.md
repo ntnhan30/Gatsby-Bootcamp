@@ -1,11 +1,13 @@
 ---
 title: "The Great Gatsby Bootcamp"
 date: "05-06-2019"
+pic: "./pic.jpg"
+pic2: "./pic2.png"
 ---
 
 Trying out gatsby
 
-![Pic](./pic.png)
+<!-- ![Pic](./pic.png) -->
 
 ## Topics Covered
 
