@@ -3,7 +3,7 @@ backend:
   branch: md 
 
 
-media_folder: "static/uploads"
+media_folder: "../../../static/uploads"
 public_folder: "uploads"
 
 collections:
@@ -17,4 +17,4 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "pic", widget: "image"}
       - {label: "Featured Image2", name: "pic2", widget: "image"}
-      - {label: "Body", name: "html", widget: "markdown"}
+      # - {label: "Body", name: "body", widget: "markdown"}
