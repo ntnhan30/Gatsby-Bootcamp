@@ -20,8 +20,22 @@ query (
       frontmatter{
         title
         date
+        pic {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        pic2 {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
-    
+      html
     }
   }
 `
@@ -31,12 +45,12 @@ const Blog = (props) => {
         <Layout>
            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
            <div className={blogStyles.imgDiv}>
-           {/* <Img  className={blogStyles.img} fluid={props.data.markdownRemark.frontmatter.pic.childImageSharp.fluid}/>
-           <Img  className={blogStyles.img} fluid={props.data.markdownRemark.frontmatter.pic2.childImageSharp.fluid}/> */}
+           <Img  className={blogStyles.img} fluid={props.data.markdownRemark.frontmatter.pic.childImageSharp.fluid}/>
+           <Img  className={blogStyles.img} fluid={props.data.markdownRemark.frontmatter.pic2.childImageSharp.fluid}/>
            </div>
            <p>{props.data.markdownRemark.frontmatter.date}</p>
-           {/* <div dangerouslySetInnerHTML={{__html:props.data.markdownRemark.html }} className={blogStyles.imgDiv} >    
-           </div> */}
+           <div dangerouslySetInnerHTML={{__html:props.data.markdownRemark.html }} className={blogStyles.imgDiv} >    
+           </div>
         </Layout>
     )
 }

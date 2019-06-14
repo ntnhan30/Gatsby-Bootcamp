@@ -2,7 +2,7 @@
 title: "The Great Gatsby Bootcamp"
 date: "05-06-2019"
 pic: "./pic.jpg"
-pic2: "./pic2.png"
+pic2: "/static/uploads/Screenshot 2019-06-03 at 18.08.54.png"
 ---
 
 Trying out gatsby
